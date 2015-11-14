@@ -1,6 +1,5 @@
 package jp.yokolabo.getapp;
 
-import android.app.Activity;
 import android.app.ActivityManager;
 import android.content.Context;
 import android.content.pm.ApplicationInfo;
@@ -46,7 +45,7 @@ public class ApplicationManager{
         if (runningApp != null) {
 
             if (!topAppNow.equals(topApp)) {
-                System.out.println(topApp + "がトップです");
+                System.out.println(topAppNow + "がトップです");
 
                 //現在ランニングアプリの中にすでにいま立ち上がったアプリがあるかチェック
                 for (int cnt = 0; cnt < runningAppList.size(); cnt++) {
@@ -71,7 +70,7 @@ public class ApplicationManager{
                         //一番上に立ち上がっていたアプリが一番上以外の場所にいたとき
                         if ((packageManager.getApplicationLabel(appInfo)).equals(topApp)) {
                             //アプリが閉じられた時
-                            System.out.println(topApp + "が閉じられました。");
+                            //System.out.println(topApp + "が閉じられました。");
                         }
                     } catch (PackageManager.NameNotFoundException e) {
                         //e.printStackTrace();
