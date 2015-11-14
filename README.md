@@ -21,7 +21,7 @@ dependencies {
 
 ###Generation and initialization of instance
 
-```SampleService
+```java
 public class MyService extends Service{
 	ApplicationManager am;
 	String topApp;
@@ -39,7 +39,7 @@ public class MyService extends Service{
 
 ###Try out
 
-```SampleService
+```java
 	@Override
     public int onStartCommand(Intent intent, int flags, int startId) {
         super.onStartCommand(intent, flags, startId);
@@ -66,7 +66,7 @@ public class MyService extends Service{
 ###Example of use
 Show toast when the Google Chrome has been initiated
 
-```Java:SampleService
+```Java
 	@Override
     public int onStartCommand(Intent intent, int flags, int startId) {
         super.onStartCommand(intent, flags, startId);
